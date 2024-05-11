@@ -15,7 +15,7 @@ session_start();
 <body>
     <div class="registration-page">
         <div class="reg-title">
-            <h3 class=""><u>ADMIN 222 REGISTRATION</u></h3>
+            <h3 class=""><u>ADMIN REGISTRATION</u></h3>
         </div>
 
         <div class="reg-options">
