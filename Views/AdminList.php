@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('database.php');
+include ('database.php');
 
 $unsuccessfulmsg = '';
 
@@ -105,8 +105,12 @@ $result = $conn->query($sql);
                             echo '<td>' . $row['mobile'] . '</td>';
                             echo '<td>' . $row['email'] . '</td>';
                             echo '<td>' . $row['address'] . '</td>';
-                            echo '<td><a href="EditAdmin.php?id=' . $row['id'] . '" class="btn btn-info">Edit</a> 
- <a href="DeleteAdmin.php?id=' . $row['id'] . '" class="btn btn-danger">Delete</a></td>';
+                            echo '<td>
+                            <a href="EditAdmin.php?id=' . $row['id'] . '" class="btn btn-info">Assign</a> 
+                            <a href="EditAdmin.php?id=' . $row['id'] . '" class="btn btn-info">Edit</a> 
+                           <a href="DeleteAdmin.php?id=' . $row['id'] . '" class="btn btn-danger">Delete</a>
+
+ </td>';
                             echo '</tr>';
                         }
                     }
